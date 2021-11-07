@@ -1,7 +1,7 @@
 console.log('test molulejs')
 
 async function start() {
-  await Promise.resolve();
+  return await Promise.resolve('console working');
 }
 
-start();
+start().then(console.log);
